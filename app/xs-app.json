@@ -1,0 +1,15 @@
+{
+  "welcomeFile": "/app/risks/webapp/index.html",
+  "routes": [
+    {
+      "source": "^/app/(.*)$",
+      "localDir": "./",
+      "target": "$1"
+    },
+    {
+      "source": "^/(.*)$",
+      "destination": "srv-api",
+      "csrfProtection": true
+    }
+  ]
+}
